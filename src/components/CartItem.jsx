@@ -35,14 +35,14 @@ const CartItem = ({id, name, type, size, totalPrice, totalCount, onRemove, onMin
 
             <div className="cart__item-count">
                 <div onClick={handleMinusItem} className="button button--outline button--circle cart__item-count-minus">
-                    <ReactSVG src={IconMinus} />
+                    <ReactSVG src={IconMinus}/>
                 </div>
 
                 <b>{totalCount}</b>
 
                 <div onClick={handlePlusItem}
-                    className="button button--outline button--circle cart__item-count-plus">
-                    <ReactSVG src={IconPlus} />
+                     className="button button--outline button--circle cart__item-count-plus">
+                    <ReactSVG src={IconPlus}/>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ const CartItem = ({id, name, type, size, totalPrice, totalCount, onRemove, onMin
 
             <div className="cart__item-remove">
                 <Button onClick={handleRemoveClick} className="button--circle" outline>
-                    <ReactSVG src={IconDel} />
+                    <ReactSVG src={IconDel}/>
                 </Button>
             </div>
         </div>

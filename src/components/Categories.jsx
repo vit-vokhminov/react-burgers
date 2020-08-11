@@ -25,5 +25,4 @@ const Categories = React.memo(function Categories({activeCategory, items, onClic
 });
 
 
-
 export default Categories;
