@@ -1,3 +1,12 @@
+Для запуска проекта потребуется, паралельно запущенный JSON сервер
+
+### npm install -g json-server
+
+Открыть второе окно консоли и запустить JSON Server
+
+### json-server --watch public/db.json --port=3001
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
