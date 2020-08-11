@@ -1,0 +1,104 @@
+{
+  "burgers": [
+    {
+      "id": 0,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1018429.1569838790.jpg",
+      "name": " Бургер хрустящий чеддер",
+      "types": [0, 1],
+      "sizes": ["Мини", "Слайдер", "TRUMP"],
+      "price": 803,
+      "category": 0,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1224670.1591344923.jpg",
+      "name": " Греческий бургер",
+      "types": [0],
+      "sizes": ["Мини", "TRUMP"],
+      "price": 245,
+      "category": 1,
+      "rating": 6
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946262.1587657433.jpg",
+      "name": "Роял Гриль",
+      "types": [0],
+      "sizes": ["Мини", "TRUMP"],
+      "price": 295,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946254.1560757389.jpg",
+      "name": "Трюфель",
+      "types": [1],
+      "sizes": ["Мини", "Слайдер", "TRUMP"],
+      "price": 275,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946252.1560757388.jpg",
+      "name": "Корсиканец",
+      "types": [0, 1],
+      "sizes": ["Мини", "Слайдер", "TRUMP"],
+      "price": 415,
+      "category": 3,
+      "rating": 8
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1000438.1560757385.jpg",
+      "name": "Корнер бургер",
+      "types": [0],
+      "sizes": ["Слайдер", "TRUMP"],
+      "price": 580,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946261.1560757393.jpg",
+      "name": "Бургер Буррата",
+      "types": [0, 1],
+      "sizes": ["Мини", "Слайдер", "TRUMP"],
+      "price": 675,
+      "category": 1,
+      "rating": 9
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1000442.1560757387.jpg",
+      "name": "Бургер Карне Асада",
+      "types": [0, 1],
+      "sizes": ["Мини", "Слайдер", "TRUMP"],
+      "price": 450,
+      "category": 4,
+      "rating": 10
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946260.1560757392.jpg",
+      "name": "БЛТ с чеддером",
+      "types": [0, 1],
+      "sizes": ["Мини", "Слайдер", "TRUMP"],
+      "price": 395,
+      "category": 5,
+      "rating": 10
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1151983.1587657429.jpg",
+      "name": "Бургер Чипотле де люкс",
+      "types": [0, 1],
+      "sizes": ["Мини", "Слайдер", "TRUMP"],
+      "price": 285,
+      "category": 5,
+      "rating": 7
+    }
+  ]
+}
