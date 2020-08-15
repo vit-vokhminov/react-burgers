@@ -34,7 +34,7 @@ function BurgerBlock({id, name, imageUrl, price, types, sizes, onClickAddBurger,
     };
 
     return (
-        <div className="burger-block">
+        <div className="burger-elem">
             <div className="burger-main">
                 <div className="flex-elem-wrap">
                     <img className="burger-block__image" src={imageUrl} alt="Burger"/>
@@ -71,7 +71,7 @@ function BurgerBlock({id, name, imageUrl, price, types, sizes, onClickAddBurger,
                     </div>
                     <div className="burger-block__bottom">
                         <div className="burger-block__price">от {price} ₽</div>
-                        <Button onClick={onAddBurger} className="button--add" outline>
+                        <Button onClick={onAddBurger} className="button--add">
                             <ReactSVG src={IconPlus} wrapper='span' className='button_icon'/>
                             <span>Добавить</span>
                             {addedCount && <i>{addedCount}</i>}

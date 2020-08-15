@@ -6,7 +6,7 @@ import IconMinus from '../assets/img/minus.svg';
 import IconPlus from "../assets/img/plus.svg";
 import IconDel from "../assets/img/del.svg";
 
-const CartItem = ({id, name, type, size, totalPrice, totalCount, onRemove, onMinus, onPlus}) => {
+const CartItem = ({id, name, imageUrl, type, size, totalPrice, totalCount, onRemove, onMinus, onPlus}) => {
     const handleRemoveClick = () => {
         onRemove(id);
     };
@@ -24,7 +24,7 @@ const CartItem = ({id, name, type, size, totalPrice, totalCount, onRemove, onMin
             <div className="cart__item-img">
                 <img
                     className="burger-block__image"
-                    src="https://www.obed.ru/images/suppliers/dishes/medium/1224670.1591344923.jpg"
+                    src={imageUrl}
                     alt="Burger"
                 />
             </div>
@@ -34,16 +34,16 @@ const CartItem = ({id, name, type, size, totalPrice, totalCount, onRemove, onMin
             </div>
 
             <div className="cart__item-count">
-                <div onClick={handleMinusItem} className="button button--outline button--circle cart__item-count-minus">
+                <button onClick={handleMinusItem} className="button button--outline button--circle cart__item-count-minus">
                     <ReactSVG src={IconMinus}/>
-                </div>
+                </button>
 
                 <b>{totalCount}</b>
 
-                <div onClick={handlePlusItem}
+                <button onClick={handlePlusItem}
                      className="button button--outline button--circle cart__item-count-plus">
                     <ReactSVG src={IconPlus}/>
-                </div>
+                </button>
             </div>
 
             <div className="cart__item-price">

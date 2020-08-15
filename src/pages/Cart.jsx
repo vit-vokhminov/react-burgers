@@ -64,6 +64,7 @@ function Cart() {
                                     key={obj.id}
                                     id={obj.id}
                                     name={obj.name}
+                                    imageUrl={obj.imageUrl}
                                     type={obj.type}
                                     size={obj.size}
                                     totalPrice={items[obj.id].totalPrice}
@@ -76,7 +77,7 @@ function Cart() {
                         </div>
                         <div className="cart__bottom">
                             <div className="cart__bottom-details">
-                                <span>Всего пицц: <b>{totalCount} шт.</b></span>
+                                <span>Всего бургеров: <b>{totalCount} шт.</b></span>
                                 <span>Сумма заказа: <b>{totalPrice} ₽</b></span>
                             </div>
                             <div className="cart__bottom-buttons">
@@ -93,8 +94,8 @@ function Cart() {
                 ) : (
                     <div className="cart cart--empty">
                         <h2>Корзина пуста</h2>
-                        <p>Вероятней всего, вы не заказывали ещё пиццу.<br/>
-                            Для того, чтобы заказать пиццу, перейди на главную страницу.
+                        <p>Вы не заказали ни одного бургера.<br/>
+                            Для того, чтобы заказать бургер, перейди на главную страницу.
                         </p>
                         <img src={cartEmptyImage} alt="Empty cart"/>
                         <Link to="/" className="button button--black">
