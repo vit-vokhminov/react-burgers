@@ -1,24 +1,35 @@
 import React from 'react';
-import {useSelector, useDispatch} from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
-import {Categories, SortPopup, BurgerBlock, BurgerLoadingBlock} from '../components';
+import {
+    Categories,
+    SortPopup,
+    BurgerBlock,
+    BurgerLoadingBlock,
+} from '../components';
 
-import {setCategory, setSortBy} from '../redux/actions/filters';
-import {fetchBurgers} from '../redux/actions/burgers';
+import { setCategory, setSortBy } from '../redux/actions/filters';
+import { fetchBurgers } from '../redux/actions/burgers';
 
-const categoryNames = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+const categoryNames = [
+    'Мясные',
+    'Вегетарианская',
+    'Гриль',
+    'Острые',
+    'Закрытые',
+];
 const sortIems = [
-    {name: 'популярности', type: 'popular', order: 'desc'},
-    {name: 'цене', type: 'price', order: 'desc'},
-    {name: 'алфавит', type: 'name', order: 'asc'},
+    { name: 'популярности', type: 'popular', order: 'desc' },
+    { name: 'цене', type: 'price', order: 'desc' },
+    { name: 'алфавит', type: 'name', order: 'asc' },
 ];
 
 function Home() {
     const dispatch = useDispatch();
-    const items = useSelector(({burgers}) => burgers.items);
-    const cartItems = useSelector(({cart}) => cart.items);
-    const isLoaded = useSelector(({burgers}) => burgers.isLoaded);
-    const {category, sortBy} = useSelector(({filters}) => filters);
+    const items = useSelector(({ burgers }) => burgers.items);
+    const cartItems = useSelector(({ cart }) => cart.items);
+    const isLoaded = useSelector(({ burgers }) => burgers.isLoaded);
+    const { category, sortBy } = useSelector(({ filters }) => filters);
 
     React.useEffect(() => {
         dispatch(fetchBurgers(sortBy, category));
@@ -40,10 +51,8 @@ function Home() {
     };
 
     return (
-        <div className="container">
-
-            <div className="content__top">
-
+        <div className='container'>
+            <div className='content__top'>
                 <Categories
                     activeCategory={category}
                     onClickCategory={onSelectCategory}
@@ -55,26 +64,29 @@ function Home() {
                     items={sortIems}
                     onClickSortType={onSelectSortType}
                 />
-
             </div>
 
-            <h2 className="content__title">В наличии:</h2>
+            <h2 className='content__title'>В наличии:</h2>
 
-            <div className="content__items">
+            <div className='content__items'>
                 {isLoaded
                     ? items.map((obj) => (
-                        <BurgerBlock
-                            onClickAddBurger={handleAddBurgerToCart}
-                            key={obj.id}
-                            addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
-                            {...obj}
-                        />
-                    ))
+                          <BurgerBlock
+                              onClickAddBurger={handleAddBurgerToCart}
+                              key={obj.id}
+                              addedCount={
+                                  cartItems[obj.id] &&
+                                  cartItems[obj.id].items.length
+                              }
+                              {...obj}
+                          />
+                      ))
                     : Array(12)
-                        .fill(0)
-                        .map((_, index) => <BurgerLoadingBlock key={index}/>)}
+                          .fill(0)
+                          .map((_, index) => (
+                              <BurgerLoadingBlock key={index} />
+                          ))}
             </div>
-
         </div>
     );
 }

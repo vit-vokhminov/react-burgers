@@ -13,11 +13,11 @@ export const fetchBurgers = (sortBy, category) => (dispatch) => {
 
     axios
         .get(
-            `/burgers?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=${
-                sortBy.order
-            }`,
+            `/burgers?${
+                category !== null ? `category=${category}` : ''
+            }&_sort=${sortBy.type}&_order=${sortBy.order}`
         )
-        .then(({data}) => {
+        .then(({ data }) => {
             dispatch(setBurgers(data));
         });
 };

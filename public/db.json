@@ -2,7 +2,7 @@
   "burgers": [
     {
       "id": 0,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1018429.1569838790.jpg",
+      "imageUrl": "img/1224670.1591344923.jpg",
       "name": " Хрустящий чеддер",
       "types": [0, 1],
       "sizes": ["Мини", "Слайдер", "TRUMP"],
@@ -12,7 +12,7 @@
     },
     {
       "id": 1,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1224670.1591344923.jpg",
+      "imageUrl": "img/946252.1560757388.jpg",
       "name": " Греческий бургер",
       "types": [0],
       "sizes": ["Мини", "TRUMP"],
@@ -22,7 +22,7 @@
     },
     {
       "id": 2,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946262.1587657433.jpg",
+      "imageUrl": "img/946254.1560757389.jpg",
       "name": "Роял Гриль",
       "types": [0],
       "sizes": ["Мини", "TRUMP"],
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946254.1560757389.jpg",
+      "imageUrl": "img/946260.1560757392.jpg",
       "name": "Трюфель",
       "types": [1],
       "sizes": ["Мини", "Слайдер", "TRUMP"],
@@ -42,7 +42,7 @@
     },
     {
       "id": 4,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946252.1560757388.jpg",
+      "imageUrl": "img/946261.1560757393.jpg",
       "name": "Корсиканец",
       "types": [0, 1],
       "sizes": ["Мини", "Слайдер", "TRUMP"],
@@ -52,7 +52,7 @@
     },
     {
       "id": 5,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1000438.1560757385.jpg",
+      "imageUrl": "img/946262.1587657433.jpg",
       "name": "Корнер бургер",
       "types": [0],
       "sizes": ["Слайдер", "TRUMP"],
@@ -62,7 +62,7 @@
     },
     {
       "id": 6,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946261.1560757393.jpg",
+      "imageUrl": "img/1000438.1560757385.jpg",
       "name": "Бургер Буррата",
       "types": [0, 1],
       "sizes": ["Мини", "Слайдер", "TRUMP"],
@@ -72,7 +72,7 @@
     },
     {
       "id": 7,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1000442.1560757387.jpg",
+      "imageUrl": "img/1000442.1560757387.jpg",
       "name": "Бургер Карне Асада",
       "types": [0, 1],
       "sizes": ["Мини", "Слайдер", "TRUMP"],
@@ -82,7 +82,7 @@
     },
     {
       "id": 8,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/946260.1560757392.jpg",
+      "imageUrl": "img/1018429.1569838790.jpg",
       "name": "БЛТ с чеддером",
       "types": [0, 1],
       "sizes": ["Мини", "Слайдер", "TRUMP"],
@@ -92,7 +92,7 @@
     },
     {
       "id": 9,
-      "imageUrl": "https://www.obed.ru/images/suppliers/dishes/medium/1151983.1587657429.jpg",
+      "imageUrl": "img/1151983.1587657429.jpg",
       "name": "Бургер Чипотле де люкс",
       "types": [0, 1],
       "sizes": ["Мини", "Слайдер", "TRUMP"],
