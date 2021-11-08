@@ -1,6 +1,6 @@
 ## ReactBurgers
 
-![Image alt](https://github.com/vit-vokhminov/react-burgers/public/2021-11-08_22-21-05.jpg)
+![Image alt](https://github.com/vit-vokhminov/react-burgers/blob/master/public/2021-11-08_22-21-05.jpg)
 
 Установка
 
